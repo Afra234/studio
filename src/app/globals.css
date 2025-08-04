@@ -52,7 +52,7 @@ html {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   }
 
-  .animated-section.fade-in-up-visible {
+  .animated-section.is-visible {
     opacity: 1;
     transform: translateY(0);
   }

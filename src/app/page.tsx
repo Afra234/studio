@@ -24,7 +24,7 @@ export default function Home() {
   useEffect(() => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('fade-in-up-visible');
+        entry.target.classList.add('is-visible');
       }
     });
   }, [entries]);
@@ -33,7 +33,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-grow">
-        <div id="hero" className="animated-section"><Hero /></div>
+        <div id="hero" className="animated-section is-visible"><Hero /></div>
         <div id="about" className="animated-section"><About /></div>
         <div id="services" className="animated-section"><Services /></div>
         <div id="process" className="animated-section"><Process /></div>

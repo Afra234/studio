@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useFormStatus } from "react-dom";
+import { useActionState, useFormStatus } from "react";
 import { submitContactForm, ContactFormState } from "@/app/actions/contact";
 import { useEffect, useRef } from "react";
 import { useToast } from "@/hooks/use-toast";

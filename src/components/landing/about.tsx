@@ -31,7 +31,7 @@ export default function About() {
 
         <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {values.map((value) => (
-            <Card key={value.title} className="text-center bg-card/50 backdrop-blur-sm transition-all hover:scale-105 hover:shadow-primary/20 shadow-lg border-border/50">
+            <Card key={value.title} className="text-center bg-card/50 backdrop-blur-sm transition-all shadow-lg border-border/50 card-hover-effect">
               <CardHeader>
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                   {value.icon}

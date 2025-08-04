@@ -49,7 +49,7 @@ export default function Process() {
                   <div className="h-4 w-4 rounded-full bg-primary ring-8 ring-background"></div>
                 </div>
                 <div className="md:w-1/2">
-                  <Card className="bg-card/50 backdrop-blur-sm shadow-lg border-border/50 transition-all hover:shadow-primary/20 hover:border-primary/50">
+                  <Card className="bg-card/50 backdrop-blur-sm shadow-lg border-border/50 transition-all card-hover-effect">
                     <CardHeader className="flex flex-row items-center gap-4 p-4">
                       <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
                         {step.icon}

@@ -1,9 +1,8 @@
 "use client";
 
-import { useActionState } from "react";
+import { useEffect, useRef, useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import { submitContactForm, ContactFormState } from "@/app/actions/contact";
-import { useEffect, useRef } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";

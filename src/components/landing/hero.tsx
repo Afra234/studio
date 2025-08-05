@@ -6,13 +6,6 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 export default function Hero() {
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <section id="hero-container" className="relative h-[calc(100vh-5rem)] min-h-[600px] w-full overflow-hidden">
@@ -21,7 +14,6 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center" 
         style={{ 
           backgroundImage: "url('https://placehold.co/1920x1080.png')",
-          transform: `translateY(${offsetY * 0.4}px)`,
         }}
         data-ai-hint="abstract technology"
       >
@@ -36,7 +28,7 @@ export default function Hero() {
             24/7 expert outsourcing so you can focus on growth.
           </p>
           <div className="flex justify-center">
-            <Button asChild size="lg" className="text-lg px-8 py-6 button-squeeze">
+            <Button asChild size="lg" className="text-lg px-8 py-6">
               <Link href="#contact">Get a Free Audit</Link>
             </Button>
           </div>
